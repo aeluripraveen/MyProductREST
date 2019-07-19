@@ -1,0 +1,22 @@
+To load the data into DB from the csv file.
+	http://localhost:8081/load
+
+REST APIs:
+
+1. To get all the records from the DB
+	GET	http://localhost:8081/products
+2. To get the particular record from the DB using Product_Id.
+	GET http://localhost:8081/products/Product_Id
+	example :
+	GET http://localhost:8081/products/900420
+
+3. To Change the existing record in DB based on Product_Id. Need to share the request data.
+	PUT http://localhost:8081/products/Product_Id
+	example :
+	PUT http://localhost:8081/products/900420
+4.  To Save new record in DB. Need to share the request data.
+	POST http://localhost:8081/products
+5.  To delete existing record in DB on Product_Id.
+	POST http://localhost:8081/products/Product_Id
+	example
+	POST http://localhost:8081/products/900420
